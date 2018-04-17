@@ -78,7 +78,7 @@ module.exports = Field.create({
 				return React.createElement(InvalidFieldType, { type: field.type, path: field.path, key: field.path });
 			}
 			const props = assign({}, field);
-			props.value = value[field.path];
+			props.value = value[field.path] || field.defaultValue;
 			props.values = value;
 			props.onChange = this.handleFieldChange.bind(this, index);
 			props.mode = 'edit';
