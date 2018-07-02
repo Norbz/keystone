@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import Container from '../../../../components/Container';
+import Container from '../../../../../components/Container';
 import { compose } from 'glamor';
 import Link from 'gatsby-link';
-import theme from '../../../../theme';
-import { rhythm } from 'utils/typography';
-import { version } from '../../../../../package.json';
-import logo from '../../../../images/logo-inverted.svg';
+import theme from '../../../../../theme';
+import { rhythm } from '../../../../../utils/typography';
+import { version } from '../../../../../../package.json';
+import logo from '../../../../../images/logo-inverted.svg';
 import { EntypoTwitter, EntypoGithub, EntypoDocuments } from 'react-entypo';
 
-import continental from '../../../../images/brand-continental.png';
-import event_cinemas from '../../../../images/brand-event_cinemas.png';
-import macmillan from '../../../../images/brand-macmillan.png';
-import sony from '../../../../images/brand-sony.png';
-import vodafone from '../../../../images/brand-vodafone.png';
-import westpac from '../../../../images/brand-westpac.png';
+import continental from '../../../../../images/brand-continental.png';
+import event_cinemas from '../../../../../images/brand-event_cinemas.png';
+import macmillan from '../../../../../images/brand-macmillan.png';
+import sony from '../../../../../images/brand-sony.png';
+import vodafone from '../../../../../images/brand-vodafone.png';
+import westpac from '../../../../../images/brand-westpac.png';
 
 export default class Header extends Component {
 	render () {
@@ -23,21 +23,21 @@ export default class Header extends Component {
 					<div className={compose(styles.intro)}>
 						<img src={logo} style={{ width: '93px' }}/>
 						<h1 className={compose(styles.intro__title)}>Node.js CMS & web application platform</h1>
-						<p className={compose(styles.intro__lead)}>Keystone is an open source framework for developing database-driven websites, applications and APIs in Node.js. Built on Express and MongoDB.</p>
+						<p className={compose(styles.intro__lead)}>Keystone is an open source framework for developing database-driven websites, applications, and APIs in Node.js. Built on Express and MongoDB.</p>
 						<div className={compose(styles.home_header_buttons)}>
 							<Link to="/getting-started" className={compose(styles.button_home, styles.button_home_primary)}>Get Started</Link> <a href="https://demo.keystonejs.com" className={compose(styles.button_home, styles.button_home_inverse)}>Try the Demo</a>
 						</div>
 						<ul className={compose(styles.list_links)}>
 							<li className={compose(styles.list_item)}>Current Version {version}</li>
-							<li className={compose(styles.list_links_item)}><a href="https://github.com/keystonejs/keystone/blob/master/HISTORY.md" style={{ color: 'white' }}>What's New</a></li>
+							<li className={compose(styles.list_links_item)}><a href="https://github.com/keystonejs/keystone/releases" style={{ color: 'white' }}>What's New</a></li>
 							<li className={compose(styles.list_item)}>Free and Open Source (MIT)</li>
 						</ul>
 						<ul className={compose(styles.list_links)}>
 							<li className={compose(styles.list_links_item)}><EntypoDocuments /> <Link to="/documentation" style={{ color: 'white' }}>Read the Documentation</Link></li>
-							<li className={compose(styles.list_links_item)}><a href="https://twitter.com/keystonejs" style={{ color: 'white' }}><EntypoTwitter /> Follow @KeysoneJS on Twitter</a></li>
-							<li className={compose(styles.list_links_item)}><a href="http://github.com/keystonejs/keystone" style={{ color: 'white' }}><EntypoGithub /> Star on GitHub</a></li>
+							<li className={compose(styles.list_links_item)}><a href="https://twitter.com/keystonejs" style={{ color: 'white' }}><EntypoTwitter /> Follow @KeystoneJS on Twitter</a></li>
+							<li className={compose(styles.list_links_item)}><a href="https://github.com/keystonejs/keystone" style={{ color: 'white' }}><EntypoGithub /> Star on GitHub</a></li>
 						</ul>
-						<p className={compose(styles.heading_text)}>Keystone powers websites, apps and APIs for:</p>
+						<p className={compose(styles.heading_text)}>Keystone powers websites, apps, and APIs for:</p>
 						<div className={compose(styles.home_header_brands)}>
 							<img src={continental} className={compose(styles.header_brand_img)}/>
 							<img src={westpac} className={compose(styles.header_brand_img)}/>
